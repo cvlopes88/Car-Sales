@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { connect } from 'react-redux';
-import { updatePriceAC } from './actions';
+
 
 import Header from './components/Header';
 import AddedFeatures from './components/AddedFeatures';

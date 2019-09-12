@@ -11,7 +11,7 @@ const Total = props => {
 
   return (
     <div className="content">
-      <h4>Total Amount: ${}</h4>
+      <h4>Total Amount: ${props.price}</h4>
     </div>
   );
 };
@@ -20,12 +20,12 @@ const Total = props => {
 const mapStateToProps = state => {
   console.log('totall', state)
   return {
-    state
+    price: state.car.price
   };
 };
 
 export default connect(
   mapStateToProps,
-  {  }
+  { updatePriceAC }
 )(Total);
 

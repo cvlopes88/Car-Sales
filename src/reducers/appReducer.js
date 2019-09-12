@@ -1,4 +1,4 @@
-import { UPDATE_PRICE, BUY_ITEM, REMOVE_FEAUTURE } from '../actions';
+import { UPDATE_PRICE, BUY_ITEM, REMOVE_FEATURE } from '../actions';
 
 
 const initialState = {
@@ -45,7 +45,7 @@ export const appReducer = (state = initialState, action) => {
                         features: [...state.car.features, action.payload]
                     }
                 };
-                case REMOVE_FEAUTURE:
+                case REMOVE_FEATURE:
                     return {
                         ...state,
                         car: {

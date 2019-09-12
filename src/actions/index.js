@@ -1,5 +1,3 @@
-
-
 export const UPDATE_PRICE = 'UPDATE_PRICE';
 export const updatePriceAC = price => {
 
@@ -12,7 +10,7 @@ export const buyitem = item => {
     return { type: BUY_ITEM, payload: item };
 };
 
-export  const REMOVE_FEAUTURE = 'REMOVE_FEAUTURE';
-export const removeFeauture = item => {
-    return { type: REMOVE_FEAUTURE, payload: item };
+export  const REMOVE_FEATURE = 'REMOVE_FEATURE';
+export const removeFeature = item => {
+    return { type: REMOVE_FEATURE, payload: item };
 }
